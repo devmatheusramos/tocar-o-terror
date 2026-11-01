@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Trilha sonora perfeita pra tocar o terror. Álbum do OgTeuBala — ouça o álbum e conheça a coleção.">
+<meta name="theme-color" content="#10100e">
+<title>Trilha sonora perfeita pra tocar o terror</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Creepster&family=Oswald:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script src="config.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#album">Ir para o conteúdo</a>
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="brand" href="#album">TOCAR O TERROR</a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="main-nav">Menu</button>
+  <nav id="main-nav" aria-label="Principal">
+    <a href="#album">O álbum</a>
+    <a href="#faixas">Faixas</a>
+    <a href="#colecao">Coleção</a>
+  </nav>
+  <a class="btn small" href="#plataformas">Ouvir agora ↗</a>
+</header>
+
+<main>
+
+  <!-- ====================== HERO ====================== -->
+  <section class="hero" id="album">
+    <div class="bg" data-parallax="0.25" aria-hidden="true"></div>
+    <div class="slime" aria-hidden="true"></div>
+    <div class="slime r" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="reveal">
+        <span class="eyebrow">DO ASFALTO PRO SEU FONE</span>
+        <h1>
+          <span class="sr">Trilha sonora perfeita pra tocar o terror</span>
+          <img src="assets/logo.webp" alt="" fetchpriority="high">
+        </h1>
+        <p class="lede">Dê o play. Aumente o volume.</p>
+
+        <div class="actions">
+          <a class="btn" href="#faixas">
+            <svg viewBox="0 0 10 10" width="11" height="11" fill="currentColor" aria-hidden="true"><polygon points="0,0 10,5 0,10"/></svg>
+            Ouvir o álbum
+          </a>
+          <a class="btn outline" href="#colecao">Ver coleção</a>
+        </div>
+
+        <div id="plataformas" class="platforms" aria-label="Plataformas de música"></div>
+      </div>
+
+      <figure class="cover-wrap reveal">
+        <div class="vinyl" aria-hidden="true"></div>
+        <div class="cover">
+          <img src="assets/capa.jpg" alt="Capa do álbum: trio verde na favela com ônibus 314 Mangueira." fetchpriority="high">
+        </div>
+        <figcaption>TRILHA SONORA PERFEITA PRA TOCAR O TERROR</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ====================== MARQUEE ====================== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 20h14l-1-6 2-5-6 1-2-4-2 4-6-1 2 5z"/></svg>
+      <span>TRILHA SONORA PERFEITA PRA TOCAR O TERROR</span>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 20h14l-1-6 2-5-6 1-2-4-2 4-6-1 2 5z"/></svg>
+      <span>TRILHA SONORA PERFEITA PRA TOCAR O TERROR</span>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 20h14l-1-6 2-5-6 1-2-4-2 4-6-1 2 5z"/></svg>
+      <span>TRILHA SONORA PERFEITA PRA TOCAR O TERROR</span>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 20h14l-1-6 2-5-6 1-2-4-2 4-6-1 2 5z"/></svg>
+      <span>TRILHA SONORA PERFEITA PRA TOCAR O TERROR</span>
+    </div>
+  </div>
+
+  <!-- ====================== APERTE O PLAY ====================== -->
+  <section class="tracks-section" id="faixas">
+    <div class="tracks-head reveal">
+      <span class="eyebrow">SEM PULAR FAIXA</span>
+      <h2>Aperte<br>o play<span>.</span></h2>
+      <span class="uline" aria-hidden="true"></span>
+    </div>
+    <div>
+      <div id="track-list"></div>
+      <audio id="audio" controls hidden preload="none"></audio>
+    </div>
+  </section>
+
+  <!-- ====================== VISTA O TERROR ====================== -->
+  <section class="collection" id="colecao">
+    <div class="inner">
+      <div class="col-head reveal">
+        <div>
+          <span class="eyebrow">A IDENTIDADE VAI ALÉM DO SOM</span>
+          <h2>Vista o terror<span>.</span></h2>
+          <span class="uline" aria-hidden="true"></span>
+        </div>
+        <p>A mesma trilha.<br>Agora com você.<span class="crown">♛</span></p>
+      </div>
+      <div id="products"></div>
+    </div>
+  </section>
+
+  <!-- ====================== BANDA FINAL ====================== -->
+  <section class="closing">
+    <div class="bg" data-parallax="0.18" aria-hidden="true"></div>
+    <div class="inner">
+      <div class="cta-side reveal">
+        <h2>O som tem cara.<br>E tem <span class="accent">rua</span>.</h2>
+        <a class="btn" href="#faixas">
+          <svg viewBox="0 0 10 10" width="11" height="11" fill="currentColor" aria-hidden="true"><polygon points="0,0 10,5 0,10"/></svg>
+          Ouvir agora
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="inner">
+    <a class="brand" href="#album">TOCAR O TERROR</a>
+    <p>Trilha sonora perfeita pra tocar o terror · OgTeuBala · 2026</p>
+    <a class="back" href="#album">Voltar ao topo ↑</a>
+    <div class="credit">
+      <span>Capa por <strong>pz7art</strong> · <a href="https://instagram.com/pz7art" target="_blank" rel="noopener">@pz7art</a></span>
+      <span>© <strong>OgTeuBala</strong> 2026 · Recife · PE</span>
+    </div>
+  </div>
+</footer>
+
+<p id="status" class="toast" role="status" aria-live="polite"></p>
+</body>
+</html>
