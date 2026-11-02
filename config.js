@@ -5,7 +5,7 @@ window.ALBUM = {
   album: {
     title: 'Trilha sonora perfeita pra tocar o terror',
     artist: 'OgTeuBala',
-    year: 2026,
+    year: 2027,
     city: 'Recife · PE'
   },
   platforms: [

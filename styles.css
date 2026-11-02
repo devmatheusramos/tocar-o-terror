@@ -481,11 +481,7 @@ header.nav nav a:hover::after { right: 0; }
   background: repeating-linear-gradient(90deg, #000 0 14px, var(--red) 14px 28px);
 }
 .collection .inner { max-width: 1360px; margin: 0 auto; position: relative; z-index: 1; }
-.col-head {
-  display: grid; grid-template-columns: 1fr auto;
-  gap: 24px; align-items: end;
-  margin-bottom: 36px;
-}
+.col-head { margin-bottom: 36px; }
 .col-head .eyebrow {
   font-family: var(--f-head);
   font-weight: 700;
@@ -511,18 +507,6 @@ header.nav nav a:hover::after { right: 0; }
   transform: skewX(-18deg);
   margin-top: 12px;
 }
-.col-head p {
-  font-family: var(--f-head);
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: .005em;
-  text-transform: uppercase;
-  margin: 0;
-  max-width: 20ch;
-  text-align: right;
-  line-height: 1.1;
-}
-.col-head p .crown { color: var(--red); margin-left: 6px; font-size: 1.1em; }
 
 #products {
   display: grid;
