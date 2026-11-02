@@ -557,12 +557,13 @@ header.nav nav a:hover::after { right: 0; }
   position: relative;
   background: #ebe0b4;
   overflow: hidden;
+  max-height: 360px;
 }
 .product img {
   width: 100%;
-  aspect-ratio: 4/5;
+  aspect-ratio: 1 / 1;
   object-fit: contain;
-  padding: 8px;
+  padding: 14px;
   background: #ebe0b4;
   transition: transform .5s cubic-bezier(.2,.9,.3,1.2);
 }
@@ -599,11 +600,11 @@ header.nav nav a:hover::after { right: 0; }
   position: relative;
   min-height: 540px;
   overflow: hidden;
-  background: #000;
+  background: #000 url("assets/banner.jpg") center/cover no-repeat;
   display: flex; align-items: center;
 }
 .closing .bg {
-  position: absolute; inset: -40px 0 -40px 0;
+  position: absolute; inset: -300px 0;
   background: url("assets/banner.jpg") center/cover no-repeat;
   will-change: transform;
   transform: translate3d(0, var(--p, 0px), 0);
@@ -611,7 +612,7 @@ header.nav nav a:hover::after { right: 0; }
 }
 .closing .bg::after {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(90deg, transparent 0 50%, rgba(0,0,0,.1) 60%, rgba(0,0,0,.8) 100%);
+  background: linear-gradient(90deg, transparent 0 45%, rgba(0,0,0,.2) 60%, rgba(0,0,0,.8) 100%);
 }
 .closing .inner {
   position: relative; z-index: 2;
