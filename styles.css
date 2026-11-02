@@ -537,6 +537,7 @@ header.nav nav a:hover::after { right: 0; }
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 16px;
+  align-items: start;
 }
 .product {
   background: #faf3dd;
@@ -544,7 +545,7 @@ header.nav nav a:hover::after { right: 0; }
   border-radius: 4px;
   overflow: hidden;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   display: flex; flex-direction: column;
   transition: transform .25s cubic-bezier(.2,.9,.3,1.2), box-shadow .25s;
   box-shadow: 3px 3px 0 rgba(0,0,0,.3);
@@ -557,14 +558,19 @@ header.nav nav a:hover::after { right: 0; }
   position: relative;
   background: #ebe0b4;
   overflow: hidden;
-  max-height: 360px;
+  height: 260px;
+  display: grid;
+  place-items: center;
+  padding: 10px;
 }
 .product img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
   object-fit: contain;
-  padding: 14px;
-  background: #ebe0b4;
+  background: transparent;
+  padding: 0;
   transition: transform .5s cubic-bezier(.2,.9,.3,1.2);
 }
 .product:hover img { transform: scale(1.06); }
@@ -574,7 +580,7 @@ header.nav nav a:hover::after { right: 0; }
   font-size: 17px;
   text-transform: uppercase;
   letter-spacing: .04em;
-  margin: 14px 0 12px;
+  margin: 12px 0 10px;
   color: #111;
 }
 .product a, .product button {
