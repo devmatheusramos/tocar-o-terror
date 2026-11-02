@@ -579,31 +579,30 @@ header.nav nav a:hover::after { right: 0; }
 /* ===================== BANDA FINAL ===================== */
 .closing {
   position: relative;
-  min-height: 620px;
+  background: #000;
   overflow: hidden;
-  background: #000 url("assets/banner.jpg") 22% center / cover no-repeat;
-  display: flex; align-items: center;
 }
-.closing .bg {
-  position: absolute; inset: -300px 0;
-  background: url("assets/banner.jpg") 22% center / cover no-repeat;
-  will-change: transform;
-  transform: translate3d(0, var(--p, 0px), 0);
-  z-index: 0;
+.closing .closing-art {
+  display: block;
+  width: 100%;
+  height: auto;
 }
-.closing .bg::after {
+.closing::after {
   content: ""; position: absolute; inset: 0;
   background: linear-gradient(90deg, transparent 0 48%, rgba(0,0,0,.35) 65%, rgba(0,0,0,.88) 100%);
+  z-index: 1;
+  pointer-events: none;
 }
 .closing .inner {
-  position: relative; z-index: 2;
+  position: absolute; inset: 0;
+  z-index: 2;
   width: 100%;
   max-width: 1360px;
   margin: 0 auto;
   padding: 50px clamp(16px, 6vw, 64px);
   padding-left: max(clamp(16px, 6vw, 64px), env(safe-area-inset-left, 0px));
   padding-right: max(clamp(16px, 6vw, 64px), env(safe-area-inset-right, 0px));
-  display: flex; justify-content: flex-end;
+  display: flex; justify-content: flex-end; align-items: center;
 }
 .closing .cta-side {
   max-width: 480px;
@@ -723,9 +722,11 @@ footer .credit a {
   .hero-inner { grid-template-columns: 1fr; gap: 36px; padding-block: 48px 56px; }
   .cover-wrap { margin: 0 auto; max-width: 440px; }
   .tracks-section { grid-template-columns: 1fr; gap: 32px; }
-  .closing .inner { justify-content: center; }
+  .closing { display: flex; flex-direction: column; }
+  .closing .closing-art { position: relative; z-index: 0; }
+  .closing::after { background: linear-gradient(180deg, rgba(0,0,0,.1) 0%, rgba(0,0,0,.85) 100%); }
+  .closing .inner { position: relative; inset: auto; padding: 36px 20px 48px; justify-content: center; min-height: 220px; margin-top: -120px; }
   .closing .cta-side { align-items: center; text-align: center; }
-  .closing .bg::after { background: linear-gradient(180deg, rgba(0,0,0,.1) 0%, rgba(0,0,0,.8) 100%); }
   .col-head { grid-template-columns: 1fr; }
   .col-head p { text-align: left; }
   footer .inner { grid-template-columns: 1fr; text-align: center; }
