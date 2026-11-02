@@ -205,18 +205,9 @@ header.nav nav a:hover::after { right: 0; }
   gap: 56px;
   align-items: center;
 }
-.hero .eyebrow {
-  font-family: var(--f-head);
-  font-weight: 700;
-  font-size: 11px;
-  letter-spacing: .3em;
-  color: var(--lime);
-  margin-bottom: 18px;
-  display: inline-block;
-  padding: 4px 10px;
-  background: rgba(0,0,0,.4);
-  border: 1px solid var(--lime);
-}
+.hero .eyebrow,
+.tracks-head .eyebrow,
+.col-head .eyebrow { display: none; }
 .hero h1 { margin: 0 0 22px; }
 .hero h1 img {
   width: 100%;
@@ -604,21 +595,21 @@ header.nav nav a:hover::after { right: 0; }
 /* ===================== BANDA FINAL ===================== */
 .closing {
   position: relative;
-  min-height: 540px;
+  min-height: 620px;
   overflow: hidden;
-  background: #000 url("assets/banner.jpg") center/cover no-repeat;
+  background: #000 url("assets/banner.jpg") 22% center / cover no-repeat;
   display: flex; align-items: center;
 }
 .closing .bg {
   position: absolute; inset: -300px 0;
-  background: url("assets/banner.jpg") center/cover no-repeat;
+  background: url("assets/banner.jpg") 22% center / cover no-repeat;
   will-change: transform;
   transform: translate3d(0, var(--p, 0px), 0);
   z-index: 0;
 }
 .closing .bg::after {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(90deg, transparent 0 45%, rgba(0,0,0,.2) 60%, rgba(0,0,0,.8) 100%);
+  background: linear-gradient(90deg, transparent 0 48%, rgba(0,0,0,.35) 65%, rgba(0,0,0,.88) 100%);
 }
 .closing .inner {
   position: relative; z-index: 2;
